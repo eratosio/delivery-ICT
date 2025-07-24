@@ -1,0 +1,39 @@
+{
+  "baseImage": "6cd2f899-b5f1-444b-afbe-ee4a4eaec1bc",
+  "organisationId": "{}",
+  "groupIds": [
+  ],
+  "entrypoint": "entry.py",
+  "dependencies": [
+    {
+      "name": "eratos-sdk",
+      "provider": "PIP"
+    },
+    {
+        "name": "numpy==1.26.4",
+        "provider": "PIP"
+    },
+    {
+        "name": "pandas~=2.0.0",
+        "provider": "PIP"
+    }
+  ],
+  "models": [
+    {
+      "id": "eratos.sandbox.calculate_sap_flow_{}",
+      "name": "Eratos Sap Flow Model: Calculate Updated SAP flow for {}",
+      "version": "0.0.1",
+      "description": "Loads uncorrected inner and outer values from a platform, calculates the Sap Flow, and outputs to datastreams",
+      "method": "",
+      "ports": [
+        {
+          "portName": "settings",
+          "required": true,
+          "type": "document",
+          "description": "Optional settings document { start_date: isodate, end_date: isodate, limit: default 1000, desc: default true }",
+          "direction": "input"
+        }
+      ]
+    }
+  ]
+}

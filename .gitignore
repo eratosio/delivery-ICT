@@ -1,0 +1,6 @@
+write_dependencies.py
+*.zip
+create_workflow/manifest.json
+create_dashboard/SAP_Flow_Automation/ecosearch_service_account.json
+create_dashboard/SAP_Flow_Automation/ecosearch_uid.json.json
+fetch_platform_from_excel/ict_senaps_key.json
